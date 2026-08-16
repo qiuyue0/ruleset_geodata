@@ -1,0 +1,49 @@
+name: Sync upstream Mihomo rules
+
+on:
+  schedule:
+    # Upstream builds at 03:00 Asia/Shanghai. Run 45 minutes later.
+    - cron: "45 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-loon-ruleset
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out loon-ruleset
+        uses: actions/checkout@v4
+        with:
+          ref: loon-ruleset
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download and convert upstream lists
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync_rules.py --output .
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t . -v
+
+      - name: Commit changed lists
+        shell: bash
+        run: |
+          if [[ -z "$(git status --porcelain -- '*.list')" ]]; then
+            echo "No upstream rule changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- '*.list'
+          git commit -m "chore: sync upstream Loon rules"
+          git push origin HEAD:loon-ruleset

@@ -1,0 +1,9 @@
+# Loon rule set converted from Mihomo format.
+# Source: https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/applications.list
+# Omitted because Loon has no safe equivalent: PROCESS-NAME=104
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+DOMAIN-SUFFIX,qbittorrent.org

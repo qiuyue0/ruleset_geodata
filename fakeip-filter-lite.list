@@ -1,0 +1,13 @@
+# Loon rule set converted from Mihomo format.
+# Source: https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter-lite.list
+# Omitted because Loon has no safe equivalent: DOMAIN-WILDCARD=23
+DOMAIN-SUFFIX,ntp.org.cn
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.edu.cn
+DOMAIN,adguardteam.github.io
+DOMAIN,adrules.top
+DOMAIN,anti-ad.net
+DOMAIN,local.adguard.org
+DOMAIN,static.adtidy.org
+DOMAIN,time-ios.apple.com
+DOMAIN,time1.cloud.tencent.com
