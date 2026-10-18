@@ -7,12 +7,14 @@ DOMAIN,blizzard.gcdn.cloudn.co.kr
 DOMAIN,c.ppy.sh
 DOMAIN,client.hikarifield.co.jp
 DOMAIN,d1unuk07s6td74.cloudfront.net
+DOMAIN,d348twzf7a8p5.cloudfront.net
 DOMAIN,datarouter.apps.netherrealm.com
+DOMAIN,devforum-uploads.s3.dualstack.us-east-2.amazonaws.com
 DOMAIN,dlgarenanow-a.akamaihd.net
 DOMAIN,download.hikarifield.co.jp
+DOMAIN,doy2mn9upadnk.cloudfront.net
 DOMAIN,eaasserts-a.akamaihd.net
 DOMAIN,epicgames-download1.akamaized.net
-DOMAIN,flightsimulator.azureedge.net
 DOMAIN,gog-cdn-lumen.secure2.footprint.net
 DOMAIN,gog-cdn.akamaized.net
 DOMAIN,gog.salesmanago.com
@@ -87,7 +89,6 @@ DOMAIN-SUFFIX,armaplatform.com
 DOMAIN-SUFFIX,artstation.com
 DOMAIN-SUFFIX,artstationmedia.com
 DOMAIN-SUFFIX,artstorm.com
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,avatargarenanow-a.akamaihd.net
 DOMAIN-SUFFIX,awayoutgame.com
 DOMAIN-SUFFIX,ayudanintendo.com
@@ -274,7 +275,6 @@ DOMAIN-SUFFIX,fire-emblem-heroes.com
 DOMAIN-SUFFIX,fireemblemawakening.com
 DOMAIN-SUFFIX,firesidegatherings.com
 DOMAIN-SUFFIX,fitgirl-repacks.site
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,flipnotestudio.com
 DOMAIN-SUFFIX,forgecdn.net
 DOMAIN-SUFFIX,fortnite-vod.akamaized.net
